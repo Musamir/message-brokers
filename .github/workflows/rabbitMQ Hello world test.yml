@@ -19,9 +19,9 @@ jobs:
           go-version: 1.17
 
       - name: Linters
-        run: cd .\rabbitMQ\'hello world'\ && go vet ./... && cd ../../
+        run: pwd
 
       - name: Test
-        run: cd .\rabbitMQ\'hello world'\ && go test -v ./... && cd ../../
+        run: ls
 
       
