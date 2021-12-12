@@ -1,4 +1,4 @@
-[![Test statuses: ](https://github.com/Musamir/message-brokers/workflows/Test%20statuses/badge.svg??branch=master)](https://github.com/Musamir/message-brokers/actions)
+[![Test statuses: ](https://github.com/Musamir/message-brokers/workflows/rabbitMQ%20Hello%20world%20test/badge.svg??branch=master)](https://github.com/Musamir/message-brokers/actions)
 
 ## Contents
 - [Description of the example](#Description-of-the-example)
