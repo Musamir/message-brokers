@@ -4,7 +4,7 @@
 - [Description of the example](#Description-of-the-example)
 - [Quick start](#Quick-start)
 
-###Description of the example
+### Description of the example
     
 In this example we have one producer and one consumer. 
 Our producer sends a few messages (you can find them on service/service.go testData slice) 
@@ -13,7 +13,7 @@ so the producer marshals messages before sending them via the protobuf protocol,
 I chose the protobuf protocol because it is one of the fastest protocols 
 (you can see  an example of using this protocol and also a comparison of this protocol with others in my [repository](https://github.com/Musamir/performance/tree/main/encoding-decoding)).
     
-###Quick start
+### Quick start
 If you wish to run the example, you need Docker (if you don’t have, you can download it from the official website [Docker](https://www.docker.com/get-started)):
 
 1. Use the following command to run
