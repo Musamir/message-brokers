@@ -1,0 +1,25 @@
+version: "3.8"
+services:
+  rabbitmq:
+    image: "rabbitmq:3-management"
+    ports:
+      - "5672:5672"
+      - "15673:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=user
+      - RABBITMQ_DEFAULT_PASS=pass
+    volumes:
+      - 'rabbitmq_data:/data'
+
+  app-go:
+    build: ./
+    command: ./app
+    environment:
+      - RABBITMQ_PASS=pass
+    depends_on:
+      - rabbitmq
+    volumes:
+      - ./logs:/srv/logs
+
+volumes:
+  rabbitmq_data:

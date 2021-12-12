@@ -1,0 +1,7 @@
+logger:
+  loglevel: debug
+rabbitmq:
+  user: user
+  host: rabbitmq
+  port: '5672'
+  queue: test queue

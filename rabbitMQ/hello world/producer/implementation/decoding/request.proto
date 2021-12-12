@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package parsing;
+
+option go_package = "./decoding";
+
+//request ...
+message request {
+  string message = 1;
+}
