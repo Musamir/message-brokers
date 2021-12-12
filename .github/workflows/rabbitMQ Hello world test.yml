@@ -19,7 +19,7 @@ jobs:
           go-version: 1.17
 
       - name: Linters
-        run: pwd
+        run: cd ./rabbitMQ
 
       - name: Test
         run: ls
