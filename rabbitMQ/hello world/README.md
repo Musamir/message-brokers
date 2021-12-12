@@ -1,8 +1,10 @@
+[![Test statuses: ](https://github.com/Musamir/message-brokers/workflows/Test%20statuses/badge.svg??branch=master)](https://github.com/Musamir/message-brokers/actions)
+
 ## Contents
 - [Description of the example](#Description-of-the-example)
 - [Quick start](#Quick-start)
 
-###Description-of-the-example
+###Description of the example
     
 In this example we have one producer and one consumer. 
 Our producer sends a few messages (you can find them on service/service.go testData slice) 
