@@ -4,10 +4,8 @@ Hi, my name is Musamir, and I am sharing here examples that interest me, and I h
 
 ## Contents
 - [Message brokers](#Benchmarks)
-    - [RabbitMQ](#RabbitMQ)
+    - [RabbitMQ](https://github.com/Musamir/message-brokers/tree/main/rabbitMQ/hello%20world)
     - [NATS](#NATS)
 
-### RabbitMQ
 
-[//]: # (    [hello world]&#40;&#41;)
 My contacts for communication: (mail - mirovmusamir@gmail.com), (telegram - @MusamirMirov)
