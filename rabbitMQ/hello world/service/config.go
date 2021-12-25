@@ -77,10 +77,9 @@ func InitLogger(config *Conf) (Logger *zap.SugaredLogger, err error) {
 }
 
 //InitRabbitMQConfig ...
-func (a *Application) InitRabbitMQConfig(conf *Conf) (RabbitMQURL string, err error) {
+func InitRabbitMQConfig(conf *Conf) (RabbitMQURL string, err error) {
 	pass := os.Getenv("RABBITMQ_PASS")
 	if pass == "" {
-		a.Logger.Errorf("RABBITMQ_PASS Environments is not set!!")
 		return RabbitMQURL, fmt.Errorf("%v(%s)", EnvironmentNotSet, "RABBITMQ_PASS")
 	}
 	//"amqp://guest:guest@localhost:5672/"

@@ -2,7 +2,6 @@ package service
 
 import (
 	"github.com/stretchr/testify/assert"
-	"go.uber.org/zap/zaptest"
 	"os"
 	"strings"
 	"testing"
@@ -48,15 +47,12 @@ rabbitmq:
 
 //TestApplication_InitRabbitMQConfig ...
 func TestApplication_InitRabbitMQConfig(t *testing.T) {
-	app := Application{
-		Logger: zaptest.NewLogger(t).Sugar(),
-	}
 	_ = os.Setenv("RABBITMQ_PASS", "")
-	actualURL, err := app.InitRabbitMQConfig(&testConfig)
+	actualURL, err := InitRabbitMQConfig(&testConfig)
 	assert.NotEqual(t, nil, err, "err mustn't be nil")
 	pass := "qwerty"
 	_ = os.Setenv("RABBITMQ_PASS", pass)
-	actualURL, _ = app.InitRabbitMQConfig(&testConfig)
+	actualURL, _ = InitRabbitMQConfig(&testConfig)
 	expectedURL := "amqp://user:qwerty@rabbitmq:5672"
 	assert.Equal(t, expectedURL, actualURL, "not equal!!!")
 }
