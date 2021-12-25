@@ -21,7 +21,7 @@ There are two roles in this process:
 
 An example of using message brokers is when, for example, 
 you need to send emails. Since emails are not sent quickly, 
-in order not to wait for the completion of sending emails, 
+in order to not wait for the completion of sending emails, 
 we pass(Publish) them to the message broker and the services 
 that send messages will take(Consume) themselves messages from the 
 broker when they are free.
